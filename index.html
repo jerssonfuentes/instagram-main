@@ -1,0 +1,135 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css"> 
+</head>
+<body>
+    <!-- Encabezado de la página -->
+    <header>
+        <!-- Contenedor del logo -->
+        <div class="header__logo">
+            <img src="./storage/img/logo.png" alt="Logo de Drop Cream"> <!-- Imagen del logo -->
+            <h2>Drop <br>Cream</h2> <!-- Nombre de la marca con salto de línea -->
+        </div>
+
+        <!-- Menú de navegación -->
+        <nav>
+            <li><a href="">Home</a></li> <!-- Enlace a la página principal -->
+            <li><a href="">Know us</a></li> <!-- Enlace a "Conócenos" -->
+            <li><a href="">Close By</a></li> <!-- Enlace a ubicaciones cercanas -->
+            <li>
+                <a href="">
+                    <img src="./storage/img/search.png" alt="Buscador"> <!-- Ícono de búsqueda -->
+                </a>
+            </li>
+        </nav>
+
+        <!-- Menú móvil (ícono hamburguesa) -->
+        <div class="header__menu">
+            <img src="./storage/img/menu.png" alt="Menú móvil"> <!-- Ícono para mostrar menú en dispositivos pequeños -->
+        </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <!-- Sección superior: Información destacada -->
+        <section class="up_part">
+            <!-- Artículo izquierdo: Descripción del producto -->
+            <article class="article__jumping">
+                <h1>Red Flower Ice-Cream</h1> <!-- Título principal -->
+                <p>Lorem ipsum dolor sit amet consectetur eveniet perspiciatis hic alias eaque quos, ipsam libero! Quibusdam quam provident distinctio.</p> <!-- Texto de relleno (debería reemplazarse) -->
+                
+                <!-- Botones de acción -->
+                <div class="div__buttons">
+                    <a href="#" class="first">Order Now</a> <!-- Botón primario (Ordenar) -->
+                    <a href="#" class="second">Book Table</a> <!-- Botón secundario (Reservar mesa) -->
+                </div>
+            </article>
+
+            <!-- Artículo derecho: Tarjetas interactivas -->
+            <article class="section__right">
+                <!-- Tarjeta de reseña de usuario -->
+                <div class="card">
+                    <div class="pic_and_name">
+                        <img class="pic" src="storage/img/gamer 1.png" alt="Usuario Uzi Nexus"> <!-- Foto de perfil -->
+                        <div class="name_and_stars">
+                            <h3>Uzi Nexus</h3> <!-- Nombre del usuario -->
+                            <div> <!-- Calificación con estrellas -->
+                                <img src="storage/img/Star 4.png" alt="Estrella">
+                                <img src="storage/img/Star 4.png" alt="Estrella">
+                                <img src="storage/img/Star 4.png" alt="Estrella">
+                                <img src="storage/img/Star 4.png" alt="Estrella">
+                                <img src="storage/img/Star 4.png" alt="Estrella">
+                            </div>
+                        </div>
+                    </div>
+                    <p>Indulge in frozen bliss with our irresistible ice cream delights!</p> <!-- Comentario del usuario -->
+                </div>
+
+                <!-- Selector de tipo de helado -->
+                <div class="down_card">
+                    <h3>Choose Type:</h3> <!-- Título del selector -->
+                    <div class="icons">
+                        <!-- Opciones de presentación -->
+                        <a href=""><img src="storage/img/cup_ice.png" alt="Vaso de helado"></a>
+                        <a href=""><img src="storage/img/cup_ice2.png" alt="Vaso de helado alternativo"></a>
+                        <a href=""><img src="storage/img/cone_ice.png" alt="Cono de helado"></a>
+                        <a href=""><img src="storage/img/add.png" alt="Añadir complementos"></a>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- Sección inferior: Productos populares -->
+        <section class="down_part">
+            <article class="article__down">
+                <!-- Encabezado de tendencias -->
+                <a href="" class="trending">Trending <img src="storage/img/fire.png" alt="Ícono de fuego"></a> <!-- Sección destacada -->
+                
+                <!-- Tarjetas de helados -->
+                <div class="ice_cards">
+                    <!-- Tarjeta izquierda con efecto de desenfoque -->
+                    <div class="only_blur">
+                        <div class="cardLeft">
+                            <img src="storage/img/iceCream_card1.png" alt="Helado de banana"> <!-- Imagen del producto -->
+                            <div class="iceInfo">
+                                <h3>Banana Soft Cream</h3> <!-- Nombre del helado -->
+                                <h5>Order Type:</h5> <!-- Tipo de pedido -->
+                                <div class="optionsDelivery">
+                                    <a href="">On table</a> <!-- Consumir en local -->
+                                    <a href="">Delivery</a> <!-- Servicio a domicilio -->
+                                </div>
+                                <div class="price_and_counter">
+                                    <h4>Rs. 250/-</h4> <!-- Precio en rupias -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta derecha  -->
+                    <div class="cardRight">
+                        <img src="storage/img/iceCream_card1.png" alt="Helado de banana"> <!-- Mismo producto de ejemplo -->
+                        <div class="iceInfo">
+                            <h3>Banana Soft Cream</h3>
+                            <h5>Order Type:</h5>
+                            <div class="optionsDelivery">
+                                <a href="">On table</a>
+                                <a href="">Delivery</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- Pie de página (vacío por ahora) -->
+    <footer>
+        <!-- Espacio reservado para información de contacto, redes sociales, etc. -->
+    </footer>
+</body>
+</html>
