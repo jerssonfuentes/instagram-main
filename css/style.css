@@ -4,7 +4,7 @@
     margin: 0;
     box-sizing: border-box;
 }
-/************* Header *****************/
+
 header{
     background: var(--lorem-container);
     width: 100%;
