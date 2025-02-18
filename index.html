@@ -1,135 +1,89 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    
-    <meta charset="UTF-8"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css"> 
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"> 
+    <link rel="shortcut icon" href="storage/img/logo.png" type="image/png">  
+    <title>Feed Post - 1:1 photo</title>  
+    <link rel="stylesheet" href="css/style.css">  
 </head>
 <body>
-    <!-- Encabezado de la página -->
     <header>
-        <!-- Contenedor del logo -->
-        <div class="header__logo">
-            <img src="./storage/img/logo.png" alt="Logo de Drop Cream"> <!-- Imagen del logo -->
-            <h2>Drop <br>Cream</h2> <!-- Nombre de la marca con salto de línea -->
+        <div class="div__logo">
+            <img src="storage/img/logo.svg">  <!-- Logo de la página. -->
+            <img src="storage/img/down-arrow.svg">  <!-- Ícono de flecha hacia abajo  -->
         </div>
-
-        <!-- Menú de navegación -->
-        <nav>
-            <li><a href="">Home</a></li> <!-- Enlace a la página principal -->
-            <li><a href="">Know us</a></li> <!-- Enlace a "Conócenos" -->
-            <li><a href="">Close By</a></li> <!-- Enlace a ubicaciones cercanas -->
-            <li>
-                <a href="">
-                    <img src="./storage/img/search.png" alt="Buscador"> <!-- Ícono de búsqueda -->
-                </a>
-            </li>
-        </nav>
-
-        <!-- Menú móvil (ícono hamburguesa) -->
-        <div class="header__menu">
-            <img src="./storage/img/menu.png" alt="Menú móvil"> <!-- Ícono para mostrar menú en dispositivos pequeños -->
+        <div class="div__options">
+            <img src="storage/img/like.svg">  <!-- Ícono de "me gusta". -->
+            <img src="storage/img/message.svg">  <!-- Ícono de mensajes. -->
+            <img src="storage/img/more.svg">  <!-- Ícono de "más opciones". -->
         </div>
     </header>
-
-    <!-- Contenido principal -->
+    <nav class="nav__storyTray">  <!-- Aquí empieza la sección de historias . -->
+        <div class="div__storyUser">
+            <div class="div__storyUser-container states">
+                <img src="storage/img/states1.png">  <!-- Imagen del usuario para la historia. -->
+            </div>
+            <span>Ruffles</span>  <!-- Nombre del usuario. -->
+        </div>
+        <div class="div__storyUser">
+            <div class="div__storyUser-container">
+                <img src="storage/img/states2.png">  <!-- Otra imagen de usuario para la historia. -->
+            </div>
+            <span>sabanok</span>  <!-- Nombre del usuario. -->
+        </div>
+        <!-- Repetí esta estructura para más usuarios con sus imágenes y nombres. -->
+    </nav>
     <main>
-        <!-- Sección superior: Información destacada -->
-        <section class="up_part">
-            <!-- Artículo izquierdo: Descripción del producto -->
-            <article class="article__jumping">
-                <h1>Red Flower Ice-Cream</h1> <!-- Título principal -->
-                <p>Lorem ipsum dolor sit amet consectetur eveniet perspiciatis hic alias eaque quos, ipsam libero! Quibusdam quam provident distinctio.</p> <!-- Texto de relleno (debería reemplazarse) -->
-                
-                <!-- Botones de acción -->
-                <div class="div__buttons">
-                    <a href="#" class="first">Order Now</a> <!-- Botón primario (Ordenar) -->
-                    <a href="#" class="second">Book Table</a> <!-- Botón secundario (Reservar mesa) -->
+        <section class="section__post">  <!-- Aquí empieza la sección de la publicación. -->
+            <div class="div__postOptions">
+                <a href="#"><img src="storage/img/options.svg"></a>  <!-- Ícono de opciones . -->
+            </div>
+            <div class="div__avatarInfo">  <!-- Información del usuario que hizo la publicación. -->
+                <div class="div__avatarInfo-container">
+                    <img src="storage/img/states1.png">  <!-- Imagen del perfil del usuario. -->
                 </div>
-            </article>
-
-            <!-- Artículo derecho: Tarjetas interactivas -->
-            <article class="section__right">
-                <!-- Tarjeta de reseña de usuario -->
-                <div class="card">
-                    <div class="pic_and_name">
-                        <img class="pic" src="storage/img/gamer 1.png" alt="Usuario Uzi Nexus"> <!-- Foto de perfil -->
-                        <div class="name_and_stars">
-                            <h3>Uzi Nexus</h3> <!-- Nombre del usuario -->
-                            <div> <!-- Calificación con estrellas -->
-                                <img src="storage/img/Star 4.png" alt="Estrella">
-                                <img src="storage/img/Star 4.png" alt="Estrella">
-                                <img src="storage/img/Star 4.png" alt="Estrella">
-                                <img src="storage/img/Star 4.png" alt="Estrella">
-                                <img src="storage/img/Star 4.png" alt="Estrella">
-                            </div>
-                        </div>
+                <div class="div__avatarInfo-perfil">
+                    <h4>Ruffles</h4>  <!-- Nombre del usuario. -->
+                    <span>Sponsored</span>  <!-- Indica que es un patrocinio. -->
+                </div>
+            </div>
+            <div class="div__postInfo">  <!-- Aquí está la información de la publicación. -->
+                <div class="div__postInfo-icons">
+                    <div class="div__leftIcons">
+                        <a href="#"><img src="storage/img/like-clic.svg"></a>  <!-- Ícono de "me gusta". -->
+                        <a href="#"><img src="storage/img/message.svg"></a>  <!-- Ícono de comentarios. -->
+                        <a href="#"><img src="storage/img/share.svg"></a>  <!-- Ícono de compartir. -->
                     </div>
-                    <p>Indulge in frozen bliss with our irresistible ice cream delights!</p> <!-- Comentario del usuario -->
-                </div>
-
-                <!-- Selector de tipo de helado -->
-                <div class="down_card">
-                    <h3>Choose Type:</h3> <!-- Título del selector -->
-                    <div class="icons">
-                        <!-- Opciones de presentación -->
-                        <a href=""><img src="storage/img/cup_ice.png" alt="Vaso de helado"></a>
-                        <a href=""><img src="storage/img/cup_ice2.png" alt="Vaso de helado alternativo"></a>
-                        <a href=""><img src="storage/img/cone_ice.png" alt="Cono de helado"></a>
-                        <a href=""><img src="storage/img/add.png" alt="Añadir complementos"></a>
+                    <div class="div__rigthIcons">
+                        <a href="#"><img src="storage/img/file.svg"></a>  <!-- Ícono de guardar (como en Instagram). -->
                     </div>
                 </div>
-            </article>
-        </section>
-
-        <!-- Sección inferior: Productos populares -->
-        <section class="down_part">
-            <article class="article__down">
-                <!-- Encabezado de tendencias -->
-                <a href="" class="trending">Trending <img src="storage/img/fire.png" alt="Ícono de fuego"></a> <!-- Sección destacada -->
-                
-                <!-- Tarjetas de helados -->
-                <div class="ice_cards">
-                    <!-- Tarjeta izquierda con efecto de desenfoque -->
-                    <div class="only_blur">
-                        <div class="cardLeft">
-                            <img src="storage/img/iceCream_card1.png" alt="Helado de banana"> <!-- Imagen del producto -->
-                            <div class="iceInfo">
-                                <h3>Banana Soft Cream</h3> <!-- Nombre del helado -->
-                                <h5>Order Type:</h5> <!-- Tipo de pedido -->
-                                <div class="optionsDelivery">
-                                    <a href="">On table</a> <!-- Consumir en local -->
-                                    <a href="">Delivery</a> <!-- Servicio a domicilio -->
-                                </div>
-                                <div class="price_and_counter">
-                                    <h4>Rs. 250/-</h4> <!-- Precio en rupias -->
-                                </div>
-                            </div>
-                        </div>
+                <span>100 Likes</span>  <!-- Número de "me gusta". -->
+                <p><strong>Username</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>  <!-- Descripción de la publicación. -->
+                <span>View all 16 comments</span>  <!-- Enlace para ver todos los comentarios. -->
+                <form action="?" method="get">  <!-- Formulario para agregar un comentario. -->
+                    <img src="storage/img/states1.png">  <!-- Imagen del perfil del usuario que comenta. -->
+                    <textarea placeholder="Add a comment..."></textarea>  <!-- Área de texto para escribir el comentario. -->
+                    <div class="div__emoji">
+                        <img src="storage/img/heart.png">  <!-- Ícono de corazón. -->
+                        <img src="storage/img/hands.png">  <!-- Ícono de manos. -->
+                        <img src="storage/img/add-reactions.png">  <!-- Ícono para agregar reacciones. -->
                     </div>
-
-                    <!-- Tarjeta derecha  -->
-                    <div class="cardRight">
-                        <img src="storage/img/iceCream_card1.png" alt="Helado de banana"> <!-- Mismo producto de ejemplo -->
-                        <div class="iceInfo">
-                            <h3>Banana Soft Cream</h3>
-                            <h5>Order Type:</h5>
-                            <div class="optionsDelivery">
-                                <a href="">On table</a>
-                                <a href="">Delivery</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
+                </form>
+                <span>30 minutes ago</span>  <!-- Tiempo desde que se publicó. -->
+            </div>
+            <div class="div__post">
+                <img src="storage/img/post.png">  <!-- Imagen de la publicación. -->
+            </div>
         </section>
     </main>
-
-    <!-- Pie de página (vacío por ahora) -->
-    <footer>
-        <!-- Espacio reservado para información de contacto, redes sociales, etc. -->
+    <footer class="footer__navigationBar">  <!-- Barra de navegación inferior. -->
+        <a href="#"><img src="storage/img/home.svg"></a>  <!-- Ícono de inicio. -->
+        <a href="#"><img src="storage/img/search.svg"></a>  <!-- Ícono de búsqueda. -->
+        <a href="#"><img src="storage/img/video.svg"></a>  <!-- Ícono de videos. -->
+        <a href="#"><img src="storage/img/buy.png"></a>  <!-- Ícono de compras. -->
+        <a href="#"><img src="storage/img/states1.png"></a>  <!-- Ícono del perfil del usuario. -->
     </footer>
 </body>
 </html>
